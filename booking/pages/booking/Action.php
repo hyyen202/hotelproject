@@ -68,7 +68,7 @@ switch ($act) {
                                 <br>Ngày nhận phòng: " . $dateIN . "
                                 <br>Ngày trả phòng: " . $dateOut . "
                                 <br>Tên phòng: " . $room . "
-                                <br>Giá phòng: " . $row['price'] . "/ngày
+                                <br>Giá phòng: " . number_format($row['price']) . "đ/ngày
                                 <br>Xin vui lòng chuyển khoản trước số tiền " . $deal . "(50% số tiền tính theo ngày trả và ngày nhận phòng) 
                                     tới tài khoản sau để xác nhận:
                                 <br>Tên ngân hàng: JneBank
@@ -146,7 +146,7 @@ switch ($act) {
                             <br>Ngày nhận phòng: " . $dateIN . "
                             <br>Ngày trả phòng: " . $dateOut . "
                             <br>Tên phòng: " . $room . "
-                            <br>Giá phòng: " . $price . "/ngày
+                            <br>Giá phòng: " . number_format($price) . "đ/ngày
                             <br>Xin vui lòng chuyển khoản trước số tiền ".$deal."(50% số tiền tính theo ngày trả và ngày nhận phòng) 
                                 tới tài khoản sau để xác nhận:
                             <br>Tên ngân hàng: JneBank

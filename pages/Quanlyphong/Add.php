@@ -18,16 +18,12 @@
                                 <div class="input-group mb-3 px-2 py-2 rounded-pill bg-white shadow-sm">
                                     <input id="img" type="file"  class="form-control border-0">
                                     <div class="input-group-append">
-                                        <label for="upload" class="btn btn-light m-0 rounded-pill px-4">
+                                        <label  class="btn btn-light m-0 rounded-pill px-4">
                                             <i class="fa fa-cloud-upload mr-2 text-muted"></i>
-                                            
                                             <small class="text-uppercase font-weight-bold text-muted">Chọn Hình Ảnh</small>
-                                           
                                         </label>
                                     </div>
-                                    
                                 </div>
-
                             </div>
                     </div>
                     
@@ -76,7 +72,7 @@
 
         let name = $('#name').val(),
             type = $('#type').val(),
-            price = $('#price').val(),
+            price = parseFloat($('#price').val()),
             note = $('#note').val();
         let formData = new FormData();
         formData.append('name', name);
@@ -84,7 +80,6 @@
         formData.append('price', price);
         formData.append('note', note);
         formData.append('img', $('#img')[0].files[0]); // Lấy tệp hình ảnh
-
         $.ajax({
             url: 'pages/Quanlyphong/Action.php?act=add',
             type: 'POST',
