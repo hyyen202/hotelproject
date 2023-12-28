@@ -77,10 +77,9 @@ switch ($act) {
                     $email = $row['email'];
                     $title = "Thanh toán thành công - NIKKO Hotel";
                     $message = "<div>Cảm ơn bạn đã chọn trải nghiệm tại NIKKO Hotel.
-                                <br>" . $name. " đã thanh toán thành công số tiền ".$total."
+                                <br>Khách hàng " . $name. " đã thanh toán thành công số tiền ".number_format($total)."đ 
                                 <br>Xin cảm phiền quí khách lên website của NIKKO Hotel và đánh giá trải nghiệm để khách sạn có thể cải thiện tốt hơn
                                 <br>Chúc quý khách có một trải nghiệm tuyệt vời.
-                                <br>Thông tin liên hệ
                                 <br>Nếu bạn có bất kỳ câu hỏi hoặc cần thêm thông tin, vui lòng liên hệ chúng tôi qua:
                                 <br>Điện thoại: 0987654321
                                 <br>Địa chỉ: 235 Đ. Nguyễn Văn Cừ, Phường Nguyễn Cư Trinh, Quận 1, Thành phố Hồ Chí Minh
